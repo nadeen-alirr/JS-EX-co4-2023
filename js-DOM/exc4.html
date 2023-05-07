@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 20%;
+        }
+        .butns{
+            display: flex;
+            flex-direction: row;
+            gap: 2%;
+            margin-left: 6%;
+        }
+        .result{
+            margin-left: 3%;
+        }
+        .result h3{
+            color: blue;
+        }
+        h1{
+            margin-left: 3%;
+            color: blue;
+        }
+        .score{
+            margin-left: 3%;
+        }
+        .score h3{
+            color: blue;
+        }
+        #TableScore {
+            width: 20%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Use a test score array</h1>
+    <div style="display: flex; flex-direction: column; padding-left: 3%;">
+    <label>name :<input type="text" id="Name"></label><br>
+    <label>Score :<input type="text" id="Score"></label><br>
+    <p id="Rednote"></p>
+    </div>
+    <div class="butns">
+        <button onclick="Add__toArray()">Add to array</button>
+        <button onclick="Display__Result()">Display Results</button>
+        <button onclick="Display__score()">Display Score</button>
+    </div>
+    <div class="result">
+        <h3>Results</h3>
+        <p id="average"></p>
+        <p id="score"></p>
+    </div>
+    <div class="score">
+        <h3>Score</h3>
+        <table id="TableScore">
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+
+        </table>
+    </div>
+    <script src="exc4.js"></script>
+</body>
+</html>
